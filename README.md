@@ -8,17 +8,14 @@
 ## Usage
 
 ```js
-@file: webpack.config.js
-
-// make sure the process.env.NODE_ENV is 'production' or 'development'
- {
+{
     test: /src\/components.*\.js$/,
     use: [
         {
             loader: 'san-js-reload-loader'
         }
     ]
-},
+}
 ```
 ## Thanks for
 [san-webpack-loader](https://github.com/jiangjiu/san-webpack-loader)
