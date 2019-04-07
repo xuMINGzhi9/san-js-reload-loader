@@ -17,6 +17,8 @@
     ]
 }
 ```
+## Demo
+[san-js-reload-demo](https://github.com/xuMINGzhi9/san-js-reload-demo)
 ## Thanks for
 [san-webpack-loader](https://github.com/jiangjiu/san-webpack-loader)
 ## License
