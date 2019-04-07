@@ -1,0 +1,11 @@
+{
+  "name": "san-js-reload-loader",
+  "version": "1.0.0",
+  "description": "针对san框架组件为.js文件的热重载的loader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
