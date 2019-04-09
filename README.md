@@ -1,5 +1,5 @@
 # san-js-reload-loader
-这是一个webpack的loader，唯一的功能就是san的.js文件的组件的热重载
+This is a webpack loader, the only function is the hot overload of components of san. JS files
 ## Install
 
 ```js
