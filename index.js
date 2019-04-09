@@ -25,24 +25,9 @@ function loader(content, callback) {
             module.hot.accept();
             var id = '${hotId}';
             var moduleDefault = module.exports ? module.exports.default : module.__proto__.exports.default;
-            // 组件export的除了是一个对象外还可能是一个构造函数
-            // 如果是构造函数，prototype就是那个对象，但是要吧aNode _cmptReady属性删去
-            try {
-                delete moduleDefault.prototype.aNode;
-                delete moduleDefault.prototype._cmptReady;
-                moduleDefault = moduleDefault.prototype;
-            } catch (e) {
-
-            }
-            
             if (!module.hot.data) {
                 hotApi.createRecord(id, moduleDefault);
             } else {
-                try {
-                    delete moduleDefault.constructor;
-                } catch (e) {
-        
-                }
                 hotApi.reload(id, moduleDefault);
             }
         `;
